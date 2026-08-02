@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#120d24">
+<meta name="description" content="A tiny fun quiz for Vennela">
+<title>Oka Chinna Test — Vennela 🌙</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars"></div>
+<main class="app">
+  <section class="card" id="startScreen">
+    <div class="moon">🌙</div>
+    <h1>Heyy Vennelaa! 😂</h1>
+    <p class="intro">
+      Oka very important test undi 😂<br>
+      Honest ga answer ivvali... shortcuts em levu 😌
+    </p>
+    <button class="primary" id="startBtn">Start cheddamaa? 😎</button>
+    <p class="tiny">⚠️ Warning: Ee test lo konchem Ramu gola untadi.</p>
+  </section>
+
+  <section class="card hidden" id="quizScreen">
+    <div class="topline">
+      <span id="questionNumber"></span>
+      <span id="scoreHint">Friendship Investigation 🕵️</span>
+    </div>
+    <div class="progress"><div id="progressBar"></div></div>
+    <h2 id="question"></h2>
+    <div id="options" class="options"></div>
+    <p class="tiny">Nee honest answer ivvu... screenshot teesukoni evidence ga pettestha 😂</p>
+  </section>
+
+  <section class="card hidden" id="resultScreen">
+    <div class="moon small">🏆</div>
+    <div class="eyebrow">Official Friendship Department</div>
+    <h1>Friendship Approved! 🎉</h1>
+    <p class="intro">Investigation complete. Ippudu official result chuddam 😌</p>
+
+    <div class="certificate" id="certificate">
+      <div class="cert-top">🏆 OFFICIAL FRIENDSHIP CERTIFICATE 🏆</div>
+      <div class="cert-line"></div>
+      <p class="cert-small">Ee certificate dwara</p>
+      <h2>Sanjana gariki 🌙</h2>
+      <p>
+        Ramu ni tolerate chestu, random reels ni survive chestu,
+        unnecessary teasing ni bharistu...
+      </p>
+      <div class="stamp">CERTIFIED<br>FRIEND</div>
+      <p class="cert-big">Friendship Level: <strong id="friendshipLevel">100%</strong> ❤️</p>
+      <p id="finalVerdict" class="verdict"></p>
+      <p class="cert-footer">Valid until further notice.<br>Terms & conditions completely imaginary 😂</p>
+    </div>
+
+    <div class="answerBox">
+      <h3>👀 Nee Answers</h3>
+      <div id="answerReview"></div>
+    </div>
+
+    <button class="primary" id="downloadBtn">📥 Certificate Download Cheskō</button>
+    <button class="secondary" id="restartBtn">Malli Test Ra? 😂</button>
+
+    <p class="footer">
+      Happy Friendship Day, Vennela! 🌙😂<br>
+      Keep smiling... and occasionally Ramu ni kuda tolerate cheyyi 😌
+    </p>
+  </section>
+</main>
+
+<div id="toast" class="toast">Certificate ready! 🎉</div>
+<script src="script.js"></script>
+</body>
+</html>
